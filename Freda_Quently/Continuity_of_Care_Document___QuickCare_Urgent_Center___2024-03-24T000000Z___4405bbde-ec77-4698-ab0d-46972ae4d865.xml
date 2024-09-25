@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="urn:hl7-org:v3"
+  xmlns:voc="urn:hl7-org:v3/voc"
+  xmlns:sdtc="urn:hl7-org:sdtc">
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01" />
+  <id root="2.16.840.1.113883.19.5.99999.1" extension="123456789" />
+  <code code="34133-9" displayName="Summarization of episode note" codeSystem="2.16.840.1.113883.6.1" />
+  <title>Continuity of Care Document</title>
+  <effectiveTime value="20240926" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+  <languageCode code="en-US" />
+  <setId root="2.16.840.1.113883.19.5.99999.19" extension="sTT988" />
+  <versionNumber value="1" />
+
+  <!-- Patient Information -->
+  <recordTarget>
+    <patientRole>
+      <id extension="883654325" root="2.16.840.1.113883.4.1" />
+      <addr use="HP">
+        <streetAddressLine>123 Main Street</streetAddressLine>
+        <city>Anytown</city>
+        <state>New York</state>
+        <postalCode>11206</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom use="HP" value="tel:+1(555)555-1234" />
+      <patient>
+        <name>
+          <given>Freda</given>
+          <family>Quently</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" />
+        <birthTime value="19940322" />
+        <languageCommunication>
+          <languageCode code="en" />
+          <modeCode code="ESP" codeSystem="2.16.840.1.113883.5.60" displayName="Expressed spoken" />
+          <proficiencyLevelCode code="G" codeSystem="2.16.840.1.113883.5.61" displayName="Good" />
+          <preferenceInd value="true" />
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+
+  <!-- Author -->
+  <author>
+    <time value="20240926" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.4.6" extension="5555555555" />
+      <assignedPerson>
+        <name>
+          <given>Emily</given>
+          <family>Thompson</family>
+        </name>
+      </assignedPerson>
+      <representedOrganization>
+        <id root="2.16.840.1.113883.19.5.99999.1" />
+        <name>QuickCare Urgent Center</name>
+        <telecom use="WP" value="tel:+1(555)555-1000" />
+        <addr>
+          <streetAddressLine>123 Main Street</streetAddressLine>
+          <city>Anytown</city>
+          <state>USA</state>
+          <postalCode>12345</postalCode>
+          <country>US</country>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+
+  <!-- Custodian (placed in the correct order) -->
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.113883.19.5.99999.1" />
+        <name>QuickCare Urgent Center</name>
+        <telecom use="WP" value="tel:+1(555)555-1000" />
+        <addr>
+          <streetAddressLine>123 Main Street</streetAddressLine>
+          <city>Anytown</city>
+          <state>USA</state>
+          <postalCode>12345</postalCode>
+          <country>US</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+
+  <!-- Encounters Section -->
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01" />
+          <code code="46240-8" displayName="History of encounters" codeSystem="2.16.840.1.113883.6.1" />
+          <title>Encounters</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Encounter</th>
+                  <th>Performer</th>
+                  <th>Location</th>
+                  <th>Date</th>
+                  <th>Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Visit for chronic nonproductive cough</td>
+                  <td>Dr. Emily Thompson</td>
+                  <td>QuickCare Urgent Center</td>
+                  <td>03/24/2024</td>
+                  <td>
+                    <content ID="encounter1note">
+                      <content>Chief Complaint:</content>
+                      <content>Chronic nonproductive cough for 2 weeks.</content>
+                      <content>History of Present Illness:</content>
+                      <content>
+                                Freda Quently is a 30-year-old female presenting 
+                                with a 2-week history of a persistent nonproductive cough. 
+                                The patient reports that the cough is mostly dry and does not 
+                                produce any sputum. There is no associated fever, chills, chest pain, 
+                                or shortness of contenteath. The patient denies any recent upper respiratory infections, 
+                                exposure to sick contacts, or travel history. She reports occasional throat 
+                                irritation but no significant pain. She has tried over-the-counter cough 
+                                suppressants with minimal relief.
+                      </content>
+                      <content>Past Medical History:</content>
+                      <content>No significant medical history, No known allergies</content>
+                      <content>Medications:</content>
+                      <content>None</content>
+                      <content>Social History:</content>
+                      <content>Never smoker, Occasional alcohol use, Works as a Software engineer</content>
+                      <content>Review of Systems:</content>
+                      <content> 
+                                  General: No fever, chills, or weight loss.
+                                  Respiratory: Dry cough, no shortness of contenteath, wheezing, or chest pain.
+                                  Cardiovascular: No palpitations or chest pain.
+                                  Gastrointestinal: No nausea, vomiting, or diarrhea.
+                                  ENT: Throat irritation, no sore throat, nasal congestion, or ear pain.
+                                  Other: No recent travel or sick contacts.
+                      </content>
+                      <content>Physical Examination:</content>
+                      <content> Vital Signs:
+                                  Blood Pressure: 120/80 mmHg
+                                  Heart Rate: 76 bpm
+                                  Respiratory Rate: 16 contenteaths per minute
+                                  Temperature: 98.6°F
+                                  Oxygen Saturation: 98% on room air
+                                  General: Alert and in no acute distress.
+                                  HEENT: Throat mildly erythematous, no tonsillar exudate, nasal passages clear.
+                                  Lungs: Clear to auscultation bilaterally, no wheezing, rales, or rhonchi.
+                                  Heart: Regular rate and rhythm, no murmurs or gallops.
+                                  Skin: No rashes or lesions.
+                                  Extremities: No edema, cyanosis, or clubbing. </content>
+                      <content>Assessment:</content>
+                      <content>
+                                Chronic nonproductive cough, likely post-viral or related to 
+                                throat irritation. Differential diagnosis includes allergic rhinitis, 
+                                GERD, or asthma.
+                      </content>
+                      <content>Plan:</content>
+                      <content>
+                                Medications:
+                                Prescribe a short course of a non-sedating antihistamine (e.g., cetirizine 10 mg daily).
+                                Consider trial of a proton pump inhibitor if symptoms persist (e.g., omeprazole 20 mg daily).
+                                Diagnostics:
+                                Recommend chest X-ray if cough persists beyond another 2 weeks or if new symptoms develop.
+                                Follow-Up:
+                                Follow up with primary care physician in 2 weeks or return to urgent care if symptoms worsen or new symptoms appear.
+                                Patient Education:
+                                Advise on hydration and use of throat lozenges to manage throat irritation.
+                                Avoid known allergens and irritants.
+                                Signature: Dr. Emily Thompson
+                                Urgent Care Physician
+                                QuickCare Urgent Center, 123 Main Street, Anytown, USA 12345
+                                03/24/2024 
+                      </content>
+                    </content>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Follow-up visit for persistent cough</td>
+                  <td>Dr. Mark Davis</td>
+                  <td>Express Health Clinic</td>
+                  <td>05/07/2024</td>
+                  <td>
+                    <content ID="encounter2note">
+                      <content>Chief Complaint:</content>
+                      <content>Chronic nonproductive cough for 8 weeks.</content>
+                      <content>History of Present Illness:</content>
+                      <content>
+                                Freda QuentlyMichaela Johnson is a 30-year-old female returning 
+                                with a persistent nonproductive cough, now ongoing for 8 weeks. 
+                                The patient states that the cough remains mostly dry, with no sputum 
+                                production. She reports that she saw an urgent care 6 weeks ago 
+                                provided minimal relief with the prescribed antihistamines. There 
+                                have been no new symptoms such as fever, chills, chest pain, or 
+                                shortness of contenteath. She notes some mild throat irritation and 
+                                occasional hoarseness. No recent upper respiratory infections, 
+                                sick contacts, or travel history. She denies any heartburn or 
+                                reflux symptoms.
+                      </content>
+                      <content>Past Medical History:</content>
+                      <content>No significant medical history, No known allergies</content>
+                      <content>Medications:</content>
+                      <content>Cetirizine 10 mg daily (minimal relief)</content>
+                      <content>Social History:</content>
+                      <content>Never smoker, Occasional alcohol use, Works as a Software engineer</content>
+                      <content>Review of Systems:</content>
+                      <content> 
+                                  General: No fever, chills, or weight loss.
+                                  Respiratory: Persistent dry cough, no shortness of contenteath, wheezing, or chest pain.
+                                  Cardiovascular: No palpitations or chest pain.
+                                  Gastrointestinal: No nausea, vomiting, or diarrhea.
+                                  ENT: Throat irritation, occasional hoarseness, no sore throat or nasal congestion.
+                                  Other: No recent travel or sick contacts.
+                      </content>
+                      <content>Physical Examination:</content>
+                      <content> Vital Signs:
+                                  Blood Pressure: 118/78 mmHg
+                                  Heart Rate: 74 bpm
+                                  Respiratory Rate: 16 contenteaths per minute
+                                  Temperature: 98.4°F
+                                  Oxygen Saturation: 98% on room air
+                                  General: Alert and in no acute distress.
+                                  HEENT: Throat mildly erythematous, no tonsillar exudate, nasal passages clear, mild hoarseness noted.
+                                  Lungs: Clear to auscultation bilaterally, no wheezing, rales, or rhonchi.
+                                  Heart: Regular rate and rhythm, no murmurs or gallops.
+                                  Abdomen: Soft, non-tender, no hepatosplenomegaly.
+                                  Skin: No rashes or lesions.
+                                  Extremities: No edema, cyanosis, or clubbing.
+                      </content>
+                      <content>Assessment:</content>
+                      <content>
+                                Persistent chronic nonproductive cough. Differential diagnosis includes 
+                                post-viral cough, allergic rhinitis, GERD, asthma, or less likely an underlying 
+                                infectious or inflammatory condition.
+                      </content>
+                      <content>Plan:</content>
+                      <content>
+                                Medications:
+                                Discontinue cetirizine.
+                                Prescribe a trial of a proton pump inhibitor (omeprazole 20 mg daily) for possible GERD-related cough.
+                                Diagnostics:
+                                Order a chest X-ray to rule out any underlying pulmonary pathology.
+                                Consider referral to a pulmonologist if no improvement with the current treatment plan or if the chest X-ray is abnormal.
+                                Follow-Up:
+                                Follow up with primary care physician or return to urgent care in 2 weeks to reassess symptoms and review chest X-ray results.
+                                Patient Education:
+                                Encourage hydration and use of throat lozenges to manage throat irritation.
+                                Advise on lifestyle modifications such as avoiding spicy foods and elevating the head of the bed if GERD is suspected.
+                                Signature: Dr. Mark Davis
+                                Urgent Care Physician
+                                Express Health Clinic, 456 Oak Avenue Anytown, USA 67890
+                                05/07/2024
+                      </content>
+                    </content>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Visit for chronic cough with associated symptoms</td>
+                  <td>Dr. Laura Green</td>
+                  <td>Priority Medical Urgent Clinic</td>
+                  <td>09/26/2024</td>
+                  <td>
+                    <content ID="encounter3note">
+                      <content>Chief Complaint:</content>
+                      <content>Chronic cough, fever, chills, hoarseness, and difficulty swallowing.</content>
+                      <content>History of Present Illness:</content>
+                      <content>
+                                Freda Quently is a 30-year-old female presenting with a persistent daily cough that 
+                                has been ongoing for “awhile”. She says she’s tried a few different medications but 
+                                doesn’t know what they were. The cough is severe enough to wake her from sleep. 
+                                Additionally, she has experienced intermittent fevers and chills. Over the past week, 
+                                she has noticed hoarseness in her voice and difficulty swallowing. The patient denies
+                                any recent upper respiratory infections, exposure to sick contacts, or travel history. 
+                                She reports no significant medical history and is not currently on any medications.
+                      </content>
+                      <content>Past Medical History:</content>
+                      <content>No known past medical history</content>
+                      <content>Medications:</content>
+                      <content>None</content>
+                      <content>Social History:</content>
+                      <content>Never smoker, Occasional alcohol use, Works as a teacher</content>
+                      <content>Review of Systems:</content>
+                      <content> 
+                                  General: Reports intermittent fever and chills, no recent weight loss.
+                                  Respiratory: Persistent, severe cough, no shortness of contenteath, no wheezing.
+                                  Cardiovascular: No chest pain, no palpitations.
+                                  Gastrointestinal: Difficulty swallowing, no nausea, vomiting, or diarrhea.
+                                  ENT: Hoarseness, difficulty swallowing, no sore throat or nasal congestion.
+                                  Other: No recent travel or sick contacts.
+                      </content>
+                      <content>Physical Examination:</content>
+                      <content> 
+                                Vital Signs:
+                                Blood Pressure: 118/76 mmHg
+                                Heart Rate: 82 bpm
+                                Respiratory Rate: 18 contenteaths per minute
+                                Temperature: 99.8°F
+                                Oxygen Saturation: 97% on room air
+                                General: Alert, in mild distress due to cough.
+                                HEENT: Throat mildly erythematous, no tonsillar exudate, mild hoarseness noted.
+                                Lungs: Clear to auscultation bilaterally, no wheezing, rales, or rhonchi.
+                                Heart: Regular rate and rhythm, no murmurs or gallops.
+                                Abdomen: Soft, non-tender, no hepatosplenomegaly.
+                                Skin: No rashes or lesions.
+                                Extremities: No edema, cyanosis, or clubbing.
+                      </content>
+                      <content>Assessment:</content>
+                      <content>
+                                Persistent chronic cough with associated fever, chills, hoarseness, and difficulty swallowing. 
+                                Differential diagnosis includes upper respiratory tract infection, laryngopharyngeal reflux, 
+                                infectious laryngitis, or possible underlying pulmonary condition.
+                      </content>
+                      <content>Plan:</content>
+                      <content>
+                                  Medications:
+                                  Prescribe a short course of oral corticosteroids (e.g., prednisone) to reduce inflammation.
+                                  Prescribe a proton pump inhibitor (e.g., omeprazole 20 mg daily) if reflux is suspected.
+                                  Diagnostics:
+                                  Order a chest X-ray to evaluate for any underlying pulmonary pathology.
+                                  Recommend a throat swab and culture to rule out bacterial infection.
+                                  Consider referral to an otolaryngologist (ENT) for further evaluation if symptoms persist or worsen.
+                                  Follow-Up:
+                                  Follow up in 1 week or sooner if symptoms worsen.
+                                  Return to urgent care or see primary care physician for chest X-ray results and further management.
+                                  Patient Education:
+                                  Encourage hydration and use of throat lozenges to manage throat irritation.
+                                  Advise on lifestyle modifications such as avoiding spicy foods and elevating the head of the bed if reflux is suspected.
+                                  Discuss signs and symptoms that should prompt immediate return to urgent care, such as worsening fever, difficulty contenteathing, or severe throat pain.
+                                  Signature: Dr. Laura Green
+                                  Urgent Care Physician
+                                  Priority Medical Urgent Clinic, 101 Elm Street, Greenfield, USA 9876506/26/2024
+                      </content>
+                    </content>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+
+          <!-- Encounter 1 -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+              <id root="2.16.840.1.113883.19.5.99999.1" extension="encounter1" />
+              <code code="99213" displayName="Office or other outpatient visit for the evaluation and management of an established patient" codeSystem="2.16.840.1.113883.6.12">
+                <originalText>
+                  <reference value="#encounter1note" />
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounter1note" />
+              </text>
+              <effectiveTime value="20240324" />
+              <performer>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.4.6" extension="5555555555" />
+                  <assignedPerson>
+                    <name>
+                      <given>Emily</given>
+                      <family>Thompson</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <code code="1160-1" displayName="Urgent Care Center" codeSystem="2.16.840.1.113883.6.259" />
+                  <addr>
+                    <streetAddressLine>123 Main Street</streetAddressLine>
+                    <city>Anytown</city>
+                    <state>USA</state>
+                    <postalCode>12345</postalCode>
+                    <country>US</country>
+                  </addr>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+
+          <!-- Encounter 2 -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+              <id root="2.16.840.1.113883.19.5.99999.1" extension="encounter2" />
+              <code code="99214" displayName="Office or other outpatient visit for the evaluation and management of an established patient" codeSystem="2.16.840.1.113883.6.12">
+                <originalText>
+                  <reference value="#encounter2note" />
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounter2note" />
+              </text>
+              <effectiveTime value="20240507" />
+              <performer>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.4.6" extension="5555555556" />
+                  <assignedPerson>
+                    <name>
+                      <given>Mark</given>
+                      <family>Davis</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <code code="1160-1" displayName="Urgent Care Center" codeSystem="2.16.840.1.113883.6.259" />
+                  <addr>
+                    <streetAddressLine>456 Oak Avenue</streetAddressLine>
+                    <city>Anytown</city>
+                    <state>USA</state>
+                    <postalCode>67890</postalCode>
+                    <country>US</country>
+                  </addr>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+
+          <!-- Encounter 3 -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+              <id root="2.16.840.1.113883.19.5.99999.1" extension="encounter3" />
+              <code code="99215" displayName="Office or other outpatient visit for the evaluation and management of an established patient" codeSystem="2.16.840.1.113883.6.12">
+                <originalText>
+                  <reference value="#encounter3note" />
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounter3note" />
+              </text>
+              <effectiveTime value="20240926" />
+              <performer>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.4.6" extension="5555555557" />
+                  <assignedPerson>
+                    <name>
+                      <given>Laura</given>
+                      <family>Green</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <code code="1160-1" displayName="Urgent Care Center" codeSystem="2.16.840.1.113883.6.259" />
+                  <addr>
+                    <streetAddressLine>101 Elm Street</streetAddressLine>
+                    <city>Greenfield</city>
+                    <state>USA</state>
+                    <postalCode>98765</postalCode>
+                    <country>US</country>
+                  </addr>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+
+      <!-- Medications Section -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2015-08-01" />
+          <code code="10160-0" displayName="History of medication use" codeSystem="2.16.840.1.113883.6.1" />
+          <title>Medications</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Medication</th>
+                  <th>Dosage</th>
+                  <th>Route</th>
+                  <th>Frequency</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cetirizine</td>
+                  <td>10 mg</td>
+                  <td>Oral</td>
+                  <td>Daily</td>
+                  <td>03/24/2024</td>
+                  <td>05/07/2024</td>
+                </tr>
+                <tr>
+                  <td>Omeprazole</td>
+                  <td>20 mg</td>
+                  <td>Oral</td>
+                  <td>Daily</td>
+                  <td>05/07/2024</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Prednisone</td>
+                  <td>Short Course</td>
+                  <td>Oral</td>
+                  <td>As prescribed</td>
+                  <td>09/26/2024</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <!-- Discrete Medication Entries -->
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+              <id root="2.16.840.1.113883.19.5.99999.20" />
+              <text>Cetirizine 10 mg daily</text>
+              <statusCode code="completed" />
+              <effectiveTime value="20240324" />
+              <doseQuantity value="10" unit="mg" />
+              <rateQuantity value="1" />
+              <administrationUnitCode code="tablet" />
+              <consumable>
+                <manufacturedProduct>
+                  <manufacturedMaterial>
+                    <code code="3002703" displayName="Cetirizine" codeSystem="2.16.840.1.113883.6.88" />
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+              <id root="2.16.840.1.113883.19.5.99999.21" />
+              <text>Omeprazole 20 mg daily</text>
+              <statusCode code="active" />
+              <effectiveTime value="20240507" />
+              <doseQuantity value="20" unit="mg" />
+              <rateQuantity value="1" />
+              <administrationUnitCode code="tablet" />
+              <consumable>
+                <manufacturedProduct>
+                  <manufacturedMaterial>
+                    <code code="311010" displayName="Omeprazole" codeSystem="2.16.840.1.113883.6.88" />
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+              <id root="2.16.840.1.113883.19.5.99999.22" />
+              <text>Prednisone (short course)</text>
+              <statusCode code="active" />
+              <effectiveTime value="20240926" />
+              <doseQuantity value="5" unit="mg" />
+              <!-- Adjusted value to a valid number -->
+              <rateQuantity value="1" />
+              <administrationUnitCode code="tablet" />
+              <consumable>
+                <manufacturedProduct>
+                  <manufacturedMaterial>
+                    <code code="4023011" displayName="Prednisone" codeSystem="2.16.840.1.113883.6.88" />
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+
+      <!-- Allergies Section -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" />
+          <code code="48765-2" displayName="Allergies and Adverse Reactions" codeSystem="2.16.840.1.113883.6.1" />
+          <title>Allergies</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Allergy</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>03/24/2024</td>
+                  <td>No known drug allergies</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>05/07/2024</td>
+                  <td>No known drug allergies</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>09/26/2024</td>
+                  <td>No known drug allergies</td>
+                  <td>Active</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.7" />
+              <id root="2.16.840.1.113883.19.5.99999.20" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <statusCode code="completed" />
+              <effectiveTime value="20240324" />
+              <value xsi:type="CD" code="409137002" displayName="No known drug allergy" codeSystem="2.16.840.1.113883.6.96" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.7" />
+              <id root="2.16.840.1.113883.19.5.99999.21" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <statusCode code="completed" />
+              <effectiveTime value="20240507" />
+              <value xsi:type="CD" code="409137002" displayName="No known drug allergy" codeSystem="2.16.840.1.113883.6.96" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.7" />
+              <id root="2.16.840.1.113883.19.5.99999.22" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <statusCode code="completed" />
+              <effectiveTime value="20240926" />
+              <value xsi:type="CD" code="409137002" displayName="No known drug allergy" codeSystem="2.16.840.1.113883.6.96" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+
+      <!-- Social History Section -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01" />
+          <code code="29762-2" displayName="Social History" codeSystem="2.16.840.1.113883.6.1" />
+          <title>Social History</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>History Type</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>03/24/2024</td>
+                  <td>Tobacco use</td>
+                  <td>Never smoker</td>
+                </tr>
+                <tr>
+                  <td>03/24/2024</td>
+                  <td>Alcohol use</td>
+                  <td>Occasional drinker</td>
+                </tr>
+                <tr>
+                  <td>03/24/2024</td>
+                  <td>Occupation</td>
+                  <td>Software engineer</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <!-- Discrete Social History Entries -->
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.78" />
+              <id root="2.16.840.1.113883.19.5.99999.31" />
+              <code code="229819007" displayName="Tobacco smoking status" codeSystem="2.16.840.1.113883.6.96" />
+              <statusCode code="completed" />
+              <effectiveTime value="20240926" />
+              <value xsi:type="CD" code="266919005" displayName="Never smoker" codeSystem="2.16.840.1.113883.6.96" />
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.78" />
+              <id root="2.16.840.1.113883.19.5.99999.32" />
+              <code code="229819007" displayName="Alcohol use" codeSystem="2.16.840.1.113883.6.96" />
+              <statusCode code="completed" />
+              <effectiveTime value="20240926" />
+              <value xsi:type="CD" code="229819007" displayName="Occasional drinker" codeSystem="2.16.840.1.113883.6.96" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+
+      <!-- Vital Signs Section -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01" />
+          <code code="8716-3" displayName="Vital Signs" codeSystem="2.16.840.1.113883.6.1" />
+          <title>Vital Signs</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Vital Sign</th>
+                  <th>Result</th>
+                  <th>Unit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>03/24/2024</td>
+                  <td>Systolic Blood Pressure</td>
+                  <td>120</td>
+                  <td>mmHg</td>
+                </tr>
+                <tr>
+                  <td>03/24/2024</td>
+                  <td>Diastolic Blood Pressure</td>
+                  <td>80</td>
+                  <td>mmHg</td>
+                </tr>
+                <tr>
+                  <td>03/24/2024</td>
+                  <td>Heart Rate</td>
+                  <td>76</td>
+                  <td>bpm</td>
+                </tr>
+                <tr>
+                  <td>03/24/2024</td>
+                  <td>Respiratory Rate</td>
+                  <td>16</td>
+                  <td>contenteaths per minute</td>
+                </tr>
+                <tr>
+                  <td>03/24/2024</td>
+                  <td>Temperature</td>
+                  <td>98.6</td>
+                  <td>°F</td>
+                </tr>
+                <tr>
+                  <td>03/24/2024</td>
+                  <td>Oxygen Saturation</td>
+                  <td>98</td>
+                  <td>%</td>
+                </tr>
+                <tr>
+                  <td>05/07/2024</td>
+                  <td>Systolic Blood Pressure</td>
+                  <td>118</td>
+                  <td>mmHg</td>
+                </tr>
+                <tr>
+                  <td>05/07/2024</td>
+                  <td>Diastolic Blood Pressure</td>
+                  <td>78</td>
+                  <td>mmHg</td>
+                </tr>
+                <tr>
+                  <td>05/07/2024</td>
+                  <td>Heart Rate</td>
+                  <td>74</td>
+                  <td>bpm</td>
+                </tr>
+                <tr>
+                  <td>05/07/2024</td>
+                  <td>Respiratory Rate</td>
+                  <td>16</td>
+                  <td>contenteaths per minute</td>
+                </tr>
+                <tr>
+                  <td>05/07/2024</td>
+                  <td>Temperature</td>
+                  <td>98.4</td>
+                  <td>°F</td>
+                </tr>
+                <tr>
+                  <td>05/07/2024</td>
+                  <td>Oxygen Saturation</td>
+                  <td>98</td>
+                  <td>%</td>
+                </tr>
+                <tr>
+                  <td>09/26/2024</td>
+                  <td>Systolic Blood Pressure</td>
+                  <td>118</td>
+                  <td>mmHg</td>
+                </tr>
+                <tr>
+                  <td>09/26/2024</td>
+                  <td>Diastolic Blood Pressure</td>
+                  <td>76</td>
+                  <td>mmHg</td>
+                </tr>
+                <tr>
+                  <td>09/26/2024</td>
+                  <td>Heart Rate</td>
+                  <td>82</td>
+                  <td>bpm</td>
+                </tr>
+                <tr>
+                  <td>09/26/2024</td>
+                  <td>Respiratory Rate</td>
+                  <td>18</td>
+                  <td>contenteaths per minute</td>
+                </tr>
+                <tr>
+                  <td>09/26/2024</td>
+                  <td>Temperature</td>
+                  <td>99.8</td>
+                  <td>°F</td>
+                </tr>
+                <tr>
+                  <td>09/26/2024</td>
+                  <td>Oxygen Saturation</td>
+                  <td>97</td>
+                  <td>%</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+
+          <!-- Discrete Vital Signs Entries for 03/24/2024 -->
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" />
+              <id root="2.16.840.1.113883.19.5.99999.40" />
+              <code code="46680005" displayName="Vital Signs" codeSystem="2.16.840.1.113883.6.96" />
+              <statusCode code="completed" />
+              <effectiveTime value="20240324" />
+              <!-- Systolic Blood Pressure -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.41" />
+                  <code code="8480-6" displayName="Systolic Blood Pressure" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240324" />
+                  <value xsi:type="PQ" value="120" unit="mmHg" />
+                </observation>
+              </component>
+              <!-- Diastolic Blood Pressure -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.58" />
+                  <code code="8462-4" displayName="Diastolic Blood Pressure" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240324" />
+                  <value xsi:type="PQ" value="80" unit="mmHg" />
+                </observation>
+              </component>
+              <!-- Heart Rate -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.42" />
+                  <code code="8867-4" displayName="Heart Rate" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240324" />
+                  <value xsi:type="PQ" value="76" unit="bpm" />
+                </observation>
+              </component>
+              <!-- Respiratory Rate -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.43" />
+                  <code code="9279-1" displayName="Respiratory Rate" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240324" />
+                  <value xsi:type="PQ" value="16" unit="contenteaths/min" />
+                </observation>
+              </component>
+              <!-- Temperature -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.44" />
+                  <code code="8310-5" displayName="Temperature" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240324" />
+                  <value xsi:type="PQ" value="98.6" unit="°F" />
+                </observation>
+              </component>
+              <!-- Oxygen Saturation -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.45" />
+                  <code code="2710-2" displayName="Oxygen Saturation" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240324" />
+                  <value xsi:type="PQ" value="98" unit="%" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+
+          <!-- Discrete Vital Signs Entries for 05/07/2024 -->
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" />
+              <id root="2.16.840.1.113883.19.5.99999.46" />
+              <code code="46680005" displayName="Vital Signs" codeSystem="2.16.840.1.113883.6.96" />
+              <statusCode code="completed" />
+              <effectiveTime value="20240507" />
+              <!-- Systolic Blood Pressure -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.47" />
+                  <code code="8480-6" displayName="Systolic Blood Pressure" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240507" />
+                  <value xsi:type="PQ" value="118" unit="mmHg" />
+                </observation>
+              </component>
+              <!-- Diastolic Blood Pressure -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.59" />
+                  <code code="8462-4" displayName="Diastolic Blood Pressure" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240507" />
+                  <value xsi:type="PQ" value="78" unit="mmHg" />
+                </observation>
+              </component>
+              <!-- Heart Rate -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.48" />
+                  <code code="8867-4" displayName="Heart Rate" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240507" />
+                  <value xsi:type="PQ" value="74" unit="bpm" />
+                </observation>
+              </component>
+              <!-- Respiratory Rate -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.49" />
+                  <code code="9279-1" displayName="Respiratory Rate" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240507" />
+                  <value xsi:type="PQ" value="16" unit="contenteaths/min" />
+                </observation>
+              </component>
+              <!-- Temperature -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.50" />
+                  <code code="8310-5" displayName="Temperature" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240507" />
+                  <value xsi:type="PQ" value="98.4" unit="°F" />
+                </observation>
+              </component>
+              <!-- Oxygen Saturation -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.51" />
+                  <code code="2710-2" displayName="Oxygen Saturation" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240507" />
+                  <value xsi:type="PQ" value="98" unit="%" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+
+          <!-- Discrete Vital Signs Entries for 09/26/2024 -->
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" />
+              <id root="2.16.840.1.113883.19.5.99999.52" />
+              <code code="46680005" displayName="Vital Signs" codeSystem="2.16.840.1.113883.6.96" />
+              <statusCode code="completed" />
+              <effectiveTime value="20240926" />
+              <!-- Systolic Blood Pressure -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.53" />
+                  <code code="8480-6" displayName="Systolic Blood Pressure" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240926" />
+                  <value xsi:type="PQ" value="118" unit="mmHg" />
+                </observation>
+              </component>
+              <!-- Diastolic Blood Pressure -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.60" />
+                  <code code="8462-4" displayName="Diastolic Blood Pressure" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240926" />
+                  <value xsi:type="PQ" value="76" unit="mmHg" />
+                </observation>
+              </component>
+              <!-- Heart Rate -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.54" />
+                  <code code="8867-4" displayName="Heart Rate" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240926" />
+                  <value xsi:type="PQ" value="82" unit="bpm" />
+                </observation>
+              </component>
+              <!-- Respiratory Rate -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.55" />
+                  <code code="9279-1" displayName="Respiratory Rate" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240926" />
+                  <value xsi:type="PQ" value="18" unit="contenteaths/min" />
+                </observation>
+              </component>
+              <!-- Temperature -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.56" />
+                  <code code="8310-5" displayName="Temperature" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240926" />
+                  <value xsi:type="PQ" value="99.8" unit="°F" />
+                </observation>
+              </component>
+              <!-- Oxygen Saturation -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.19.5.99999.57" />
+                  <code code="2710-2" displayName="Oxygen Saturation" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20240926" />
+                  <value xsi:type="PQ" value="97" unit="%" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+
+      <!-- Results Section -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01" />
+          <code code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data" codeSystem="2.16.840.1.113883.6.1" />
+          <title>Results</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Test</th>
+                  <th>Result</th>
+                  <th>Reference Range</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- CMP Results -->
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Complete Metabolic Panel (CMP)</td>
+                  <td>Glucose: 90 mg/dL</td>
+                  <td>70-99 mg/dL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Calcium</td>
+                  <td>9.5 mg/dL</td>
+                  <td>8.5-10.2 mg/dL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Sodium</td>
+                  <td>140 mmol/L</td>
+                  <td>135-145 mmol/L</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Potassium</td>
+                  <td>4.2 mmol/L</td>
+                  <td>3.5-5.1 mmol/L</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Chloride</td>
+                  <td>102 mmol/L</td>
+                  <td>98-107 mmol/L</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Carbon Dioxide (Bicarbonate)</td>
+                  <td>25 mmol/L</td>
+                  <td>22-29 mmol/L</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Blood Urea Nitrogen (BUN)</td>
+                  <td>14 mg/dL</td>
+                  <td>7-20 mg/dL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Creatinine</td>
+                  <td>0.9 mg/dL</td>
+                  <td>0.6-1.3 mg/dL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Total Protein</td>
+                  <td>7.0 g/dL</td>
+                  <td>6.0-8.3 g/dL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Albumin</td>
+                  <td>4.5 g/dL</td>
+                  <td>3.5-5.0 g/dL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Total Bilirubin</td>
+                  <td>0.8 mg/dL</td>
+                  <td>0.1-1.2 mg/dL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Alkaline Phosphatase</td>
+                  <td>70 U/L</td>
+                  <td>44-147 U/L</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Aspartate Aminotransferase (AST)</td>
+                  <td>20 U/L</td>
+                  <td>10-40 U/L</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Alanine Aminotransferase (ALT)</td>
+                  <td>22 U/L</td>
+                  <td>7-56 U/L</td>
+                </tr>
+                <!-- CBC Results -->
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Complete Blood Count (CBC)</td>
+                  <td>WBC Count: 6.0 x 10^3/µL</td>
+                  <td>4.0-11.0 x 10^3/µL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>RBC Count</td>
+                  <td>5.0 x 10^6/µL</td>
+                  <td>4.5-5.9 x 10^6/µL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Hemoglobin</td>
+                  <td>14.5 g/dL</td>
+                  <td>13.5-17.5 g/dL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Hematocrit</td>
+                  <td>43.5%</td>
+                  <td>41.0-53.0%</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>MCV</td>
+                  <td>87 fL</td>
+                  <td>80-100 fL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>MCH</td>
+                  <td>29 pg</td>
+                  <td>26-34 pg</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>MCHC</td>
+                  <td>34 g/dL</td>
+                  <td>31-37 g/dL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>RDW</td>
+                  <td>13%</td>
+                  <td>11.5-14.5%</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Platelet Count</td>
+                  <td>250 x 10^3/µL</td>
+                  <td>150-450 x 10^3/µL</td>
+                </tr>
+                <!-- Lipid Panel Results -->
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Lipid Panel</td>
+                  <td>Total Cholesterol: 180 mg/dL</td>
+                  <td>&lt;200 mg/dL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>HDL Cholesterol</td>
+                  <td>55 mg/dL</td>
+                  <td>≥40 mg/dL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>LDL Cholesterol</td>
+                  <td>110 mg/dL</td>
+                  <td>&lt;130 mg/dL</td>
+                </tr>
+                <tr>
+                  <td>06/26/2021</td>
+                  <td>Triglycerides</td>
+                  <td>120 mg/dL</td>
+                  <td>&lt;150 mg/dL</td>
+                </tr>
+                <!-- Chest X-Ray Results -->
+                <tr>
+                  <td>05/07/2024</td>
+                  <td>Chest X-Ray</td>
+                  <td>Normal</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+
+          <!-- Discrete Result Entries -->
+          <!-- CMP Results -->
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" />
+              <id root="2.16.840.1.113883.19.5.99999.2" />
+              <code code="24331-1" displayName="CMP" codeSystem="2.16.840.1.113883.6.1" />
+              <statusCode code="completed" />
+              <!-- Individual Test Results under CMP -->
+              <!-- Glucose -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.19.5.99999.3" />
+                  <code code="2339-0" displayName="Glucose" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20210626" />
+                  <value xsi:type="PQ" value="90" unit="mg/dL" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>70-99 mg/dL</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <!-- Calcium -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.19.5.99999.4" />
+                  <code code="17861-6" displayName="Calcium" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20210626" />
+                  <value xsi:type="PQ" value="9.5" unit="mg/dL" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>8.5-10.2 mg/dL</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <!-- Sodium -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.19.5.99999.12" />
+                  <code code="2951-2" displayName="Sodium" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20210626" />
+                  <value xsi:type="PQ" value="140" unit="mmol/L" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>135-145 mmol/L</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <!-- Potassium -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.19.5.99999.13" />
+                  <code code="2823-3" displayName="Potassium" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20210626" />
+                  <value xsi:type="PQ" value="4.2" unit="mmol/L" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>3.5-5.1 mmol/L</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <!-- Continue adding remaining CMP tests... -->
+            </organizer>
+          </entry>
+
+          <!-- CBC Results -->
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" />
+              <id root="2.16.840.1.113883.19.5.99999.5" />
+              <code code="33745-9" displayName="CBC" codeSystem="2.16.840.1.113883.6.1" />
+              <statusCode code="completed" />
+              <!-- Individual Test Results under CBC -->
+              <!-- WBC Count -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.19.5.99999.6" />
+                  <code code="6690-2" displayName="WBC Count" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20210626" />
+                  <value xsi:type="PQ" value="6.0" unit="10^3/µL" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>4.0-11.0 x 10^3/µL</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <!-- RBC Count -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.19.5.99999.14" />
+                  <code code="789-8" displayName="RBC Count" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20210626" />
+                  <value xsi:type="PQ" value="5.0" unit="10^6/µL" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>4.5-5.9 x 10^6/µL</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <!-- Continue adding remaining CBC tests... -->
+            </organizer>
+          </entry>
+
+          <!-- Lipid Panel Results -->
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" />
+              <id root="2.16.840.1.113883.19.5.99999.8" />
+              <code code="57698-3" displayName="Lipid Panel" codeSystem="2.16.840.1.113883.6.1" />
+              <statusCode code="completed" />
+              <!-- Individual Test Results under Lipid Panel -->
+              <!-- Total Cholesterol -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.19.5.99999.9" />
+                  <code code="2093-3" displayName="Total Cholesterol" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20210626" />
+                  <value xsi:type="PQ" value="180" unit="mg/dL" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>&lt;200 mg/dL</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <!-- HDL Cholesterol -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.19.5.99999.15" />
+                  <code code="2085-9" displayName="HDL Cholesterol" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20210626" />
+                  <value xsi:type="PQ" value="55" unit="mg/dL" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>≥40 mg/dL</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <!-- LDL Cholesterol -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.19.5.99999.16" />
+                  <code code="13457-7" displayName="LDL Cholesterol" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20210626" />
+                  <value xsi:type="PQ" value="110" unit="mg/dL" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>&lt;130 mg/dL</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <!-- Triglycerides -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.19.5.99999.17" />
+                  <code code="2571-8" displayName="Triglycerides" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20210626" />
+                  <value xsi:type="PQ" value="120" unit="mg/dL" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>&lt;150 mg/dL</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+
+          <!-- Chest X-Ray Result -->
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.13" />
+              <id root="2.16.840.1.113883.19.5.99999.11" />
+              <code code="24606-6" displayName="Chest X-Ray" codeSystem="2.16.840.1.113883.6.1" />
+              <statusCode code="completed" />
+              <effectiveTime value="20240507" />
+              <value xsi:type="ST">Normal</value>
+            </observation>
+          </entry>
+
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
