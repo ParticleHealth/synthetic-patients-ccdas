@@ -1,0 +1,3 @@
+GLYNDA
+This patient has been living with type 2 diabetes for over a decade, a condition that has shaped much of her journey. While her diabetes is moderately controlled, managing it alongside hypertension, hyperlipidemia, and obesity has presented ongoing challenges.
+Showcase critical lab and vital sign trends, medication history and care caps, e.g. overdue for HbA1c or microalbumin testing, and eye screening.

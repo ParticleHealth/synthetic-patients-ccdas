@@ -1,0 +1,3 @@
+TUMA
+This patient allows customers to explore realistic oncology workflows, balancing chronic disease management with aggressive cancer treatment, while emphasizing the complexity of managing comorbidities. It highlights how chronic diseases like diabetes and CKD must be tightly controlled, particularly when managing the side effects of aggressive cancer therapies.
+Showcase oncology specific data with this patient.
