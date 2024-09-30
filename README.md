@@ -1,6 +1,6 @@
 This repository contains a collection of Synthetic CCDA Files that Particle Health (www.particlehealth.com) created.   
 
-The repository is licensed using Creative Commons - Attribution (BY) license - https://creativecommons.org/licenses/by/4.0/ 
+The repository is licensed using Creative Commons Attribution (CC-BY-4.0) license - https://creativecommons.org/licenses/by/4.0/ 
 
 The repository has 5 patients with different clinical conditions. The patients are named mnemonically to make them easier to remember: 
 
