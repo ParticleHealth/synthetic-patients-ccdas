@@ -1,3 +1,5 @@
-FREDA
+Freda Quently 
+
 This patient has been visiting multiple urgent care centers over the past year for a persistent nonproductive cough, which has not resolved despite various treatments. Each visit has been to a different clinic with different providers, leading to a lack of continuity of care and incomplete medical records. She has no significant medical history and has not been on any regular medications. Initially, her symptoms were mild, with a dry cough and throat irritation. However, they progressed to include hoarseness, intermittent fever, and difficulty swallowing. Eventually, the patient is diagnosed with thyroid cancer.
+
 Showcase the power of having complete and comprehensive clinical history when onboarding a new patient for early diagnosis and treatment.

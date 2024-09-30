@@ -1,3 +1,5 @@
-HART
+Hart Fallon
+
 This patient has congestive heart failure with worsening symptoms over time. He also struggles with several comorbidities, including hyperlipidemia, diabetes, renal insufficiency and anemia. Patient had a referral to see a cardiologist for his condition(s) and has been hospitalized for decompensated heart failure with reduced ejection fraction.
+
 Showcase trending labs, vitals and medications that align with progressively worsening clinical state. Highlight clinical notes including a discharge summary and diagnostic imaging reports. This patient demonstrates the importance of consistent monitoring and management of complex chronic diseases.
