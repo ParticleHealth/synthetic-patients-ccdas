@@ -18,7 +18,6 @@ For connection to the HIN networks, and sophisticated analytics off CCDA and FHI
 
 Future ideas: 
 * Provide the same data in FHIR Format. 
-* Provide the same data in a common schema format such as Tuva Project,  https://thetuvaproject.com/
 * Split out the CCDA into several files. 
 
 PRs / Contributions welcome.  
