@@ -5,7 +5,7 @@ The CCDA file shows data for a patient journey through chronic pain management o
 This showcases long term musculoskeletal data, including specialist, procedure and imaging notes. Highlights medications for chronic pain management.
 
 ## Patient Summary
-*Below is generated using Particle Health's AI Summarization *
+*Below is generated using Particle Health's AI Summarization*
 
 **Patient Demographics:** Artie Jointston, 73-year-old male.
 

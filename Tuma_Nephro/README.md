@@ -3,7 +3,7 @@
 This patient allows to explore realistic oncology workflows, balancing chronic disease management with aggressive cancer treatment, while emphasizing the complexity of managing comorbidities. It highlights how chronic diseases like diabetes and CKD must be tightly controlled, particularly when managing the side effects of aggressive cancer therapies.
 
 ## Patient Summary
-*Below is generated using Particle Health's AI Summarization *
+*Below is generated using Particle Health's AI Summarization*
 
 **Patient Demographics:** Tuma Nephro, 65-year-old female.
 
